@@ -1,0 +1,10 @@
+<!--pages/shopping.wxml-->
+<view class="shopping">
+  <m-swiper swiperList="{{swiperList}}"></m-swiper>
+  <view class="scancode">
+    <view class="button">
+      <image src="../../assets/images/qrcode.png"></image>
+      <text>请扫描商品条形码</text>
+    </view>
+  </view>
+</view>
