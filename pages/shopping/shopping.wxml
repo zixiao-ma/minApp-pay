@@ -1,10 +1,5 @@
 <!--pages/shopping.wxml-->
-<view class="shopping">
+<view class="shopping bgc">
   <m-swiper swiperList="{{swiperList}}"></m-swiper>
-  <view class="scancode">
-    <view class="button">
-      <image src="../../assets/images/qrcode.png"></image>
-      <text>请扫描商品条形码</text>
-    </view>
-  </view>
+  <m-scanCode bind:getResult="getShopCode" showCart="{{showCart}}" count="{{showCart}}"></m-scanCode>
 </view>

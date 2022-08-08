@@ -1,20 +1,29 @@
 // pages/shopping.js
 import {Pay} from '../../model/shopping'
-
+import _ from '../../utils/navigate'
+import {addCart} from '../../common/addCart'
+import {checkCart} from '../../common/checkCart'
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-      swiperList:[]
+      swiperList:[],
+      showCart:false
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-    this.getBanner()
+    this.getBanner();
+    this.setShowCart()
+  },
+  setShowCart(){
+    this.setData({
+      showCart:checkCart()
+    })
   },
   getBanner(){
     Pay.getBanner().then(res=>{
@@ -23,7 +32,19 @@ Page({
         swiperList:res.data
       })
     })
- 
+  },
+  async getShopCode({detail}){
+    const {success,result} = await Pay.getShopingInfo(detail)
+    if(success && result.length>0){
+      addCart(result[0])
+      _.navigateTo('/pages/cart/cart')
+    }else{
+      wx.showToast({
+        title: '抱歉，未查询到此商品信息！',
+        icon:'none'
+      })
+    }
+   
   },
   /**
    * 生命周期函数--监听页面初次渲染完成
@@ -36,7 +57,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow() {
-
+    this.setShowCart()
   },
 
   /**

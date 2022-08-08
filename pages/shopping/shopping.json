@@ -1,5 +1,6 @@
 {
   "usingComponents": {
-    "m-swiper":"../../components/swiper/swiper"
+    "m-swiper":"../../components/swiper/swiper",
+    "m-scanCode":"../../components/ScanCodeButton/ScanCodeButton"
   }
 }

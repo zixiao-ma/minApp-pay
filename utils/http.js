@@ -1,10 +1,11 @@
 import {wxToPromise} from './wx'
-import ApiConfig from '../config/config'
+import publicConfig from '../config/config'
 import exceptionMessage from '../config/exceptionMessage '
+
 export class Http {
   static async request(options){
     let serviceUrl = options.baseUrl || 'api'
-    options.url = ApiConfig[serviceUrl].baseUrl+ options.url 
+    options.url = publicConfig.ApiConfig[serviceUrl].baseUrl+ options.url 
     wx.showLoading({
       title: '努力加载中...' 
     })
