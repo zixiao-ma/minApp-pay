@@ -1,0 +1,86 @@
+/* pages/payOrder/payOrder.wxss */
+.order_payModel{
+  position: fixed;
+  min-width: 100vw;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  border-top: 1px solid #ddd;
+  display: flex;
+  height: 100rpx;
+  
+}
+
+.price{
+  flex: 1;
+  display: flex;
+  padding-left: 20rpx;
+  align-items: center;
+}
+.price text{
+  color: red;
+}
+.payButton{
+  width: 220rpx;
+  background-color: orange;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.goodsItem{
+  border-bottom: 1px solid #ddd;
+  background-color: #fff;
+}
+.goodsItem .title{
+display: flex;
+justify-content: space-between;
+padding: 10rpx;
+white-space: normal;
+}
+.title text:nth-child(2){
+  color: red;
+}
+.goodsNum{
+  display: flex;
+  justify-content: space-between;
+  padding: 10rpx;
+  margin-top: 20rpx;
+}
+.goodsNum text:first-child{
+  color: #666;
+  font-size: 24rpx;
+}
+.showAllGoods{
+  text-align: center;
+  padding: 25rpx;
+  background-color: #fff;
+}
+.showAllGoods text{
+  display: inline-block;
+  position: relative;
+  right: -20rpx;
+  transition: all .3s;
+}
+.red{
+  color: red;
+}
+.flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30rpx 10rpx;
+  background-color: #fff;
+  margin: 10rpx 0;
+}
+.tootip{
+  text-align: center;
+  margin-top: 100rpx;
+  color: #666;
+}
+.rotateTop{
+  transform: rotate(90deg) ;
+}
+.rotateBtm{
+  transform: rotate(-90deg) ;
+}

@@ -1,0 +1,13 @@
+<view class="paySuccess bgc">
+  <view class="paySuccess_tootip">
+    <image src="/assets/images/face.png"></image>
+    <view class="title">支付成功</view>
+    <view><button bindtap="handleGohome">返回首页</button></view>
+  </view>
+
+  <view class="youLike">
+    <text class="mixinText">*</text> 你可能喜欢 <text class="mixinText">*</text>
+  </view>
+  <m-recommended></m-recommended>
+
+</view>

@@ -1,0 +1,39 @@
+/* components/recommended/recommended.wxss */
+.productList{
+  height: 550rpx;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 20rpx;
+  border-bottom: 10px solid #f2f2f2;
+  overflow: hidden;
+}
+image{
+ width: 100%;
+ border-radius: 10rpx;
+}
+button{
+  background-color: #e22211;
+  color: #fff;
+  margin: 0;
+}
+.price{
+  font-size: 40rpx;
+  color: red;
+}
+.text{
+  padding: 10rpx 20rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.buy text{
+  color: #666;
+  font-size: 14px;
+}
+.buy{
+  padding: 10rpx 20rpx;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}

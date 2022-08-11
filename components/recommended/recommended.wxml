@@ -1,0 +1,7 @@
+<view>
+  <view class="productList" wx:for="{{list}}" wx:key="index">
+  <image src="{{item.path}}"></image>
+  <view class="text"><text>{{item.title}}</text> <text class="price">￥{{item.price}}</text></view>
+  <view class="buy"><text>销量：{{item.sales}}件</text><button size="mini">立即购买</button></view>
+  </view>
+</view>

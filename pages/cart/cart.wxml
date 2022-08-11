@@ -1,0 +1,23 @@
+<view class="cart">
+<view class="cart_list" wx:if="{{cartData.length>0}}">
+  <m-cartList 
+  wx:for="{{cartData}}"
+  wx:key="index"
+  desc="{{item.description}}"
+  title="{{item.title}}"
+  num="{{item.num}}"
+  price="{{item.price}}"
+  shopid="{{item._id}}"
+  isCheck="{{item.isCheck}}"
+  bind:Refresh="RefreshPage"
+   ></m-cartList>
+ <view class="tootip"> ~长按即可删除商品！~</view>
+</view>
+<view class="cart_list" wx:else>
+  <m-empty></m-empty>
+</view>
+<view class="cart_settlement">
+  <m-settlement bind:Refresh="RefreshPage" checkBoxStatus="{{checkAllStatus}}" allPrice="{{allPrice}}" allNum="{{allNum}}" buttonStatus="{{buttonStatus}}"></m-settlement>
+</view>
+
+</view>

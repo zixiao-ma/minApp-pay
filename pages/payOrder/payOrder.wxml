@@ -1,0 +1,46 @@
+<view class="order bgc">
+  <view class="order_payList">
+    <view class="goodsItem" wx:for="{{showList}}" wx:key="index" >
+      <view class="title">
+        <text>{{item.title}}</text>
+        <text>￥{{item.price}}</text>
+      </view>
+      <view class="goodsNum">
+      <text>{{item.description}}</text>
+        <text>X{{item.num}}</text>
+      </view>
+    </view>
+    <view class="showAllGoods" bindtap="handleClickShowAll" wx:if="{{orderList.length>1}}">
+      共{{orderList.length}}件商品 {{btnstr}} <text class="{{btnstr==='展开'?'rotateTop':'rotateBtm'}}">⟩</text>
+    </view>
+    <view class="balance flex" wx:if="{{showBalance}}">
+      <view>余额 <text class="red">(￥{{balance}})</text> </view>
+      <view>
+        <switch color='orange' checked="{{Switch}}" bindchange='handleSwitchChange'></switch>
+      </view>
+    </view>
+    <view class="goodsPrice flex">
+      <view>商品金额 </view>
+      <view>
+        <text class="red">￥{{allPrice}}</text>
+      </view>
+    </view>
+    <view class="Reduce flex" wx:if="{{showBalance}}">
+      <view>余额减扣  </view>
+      <view>
+        <text class="red">￥{{computedBalance}}</text>
+      </view>
+    </view>
+    <view class="tootip">
+    请支付完成后携带商品！
+    </view>
+  </view>
+  <view class="order_payModel">
+    <view class="price">
+      实际支付： <text>￥{{actual}}</text>
+    </view>
+    <view class="payButton" bindtap="handlePayButtonClick">
+      确定支付
+    </view>
+  </view>
+</view>

@@ -1,0 +1,66 @@
+/* components/cartList/cartList.wxss */
+.cart_item{
+  height: 220rpx;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 10rpx;
+  box-sizing: border-box;
+  padding: 10rpx;
+  display: flex;
+  align-items: center;
+}
+.cart_list_left{
+  padding: 0 10rpx;
+}
+.cart_list_right{
+  flex: 1;
+}
+.shop_desc{
+  color: #666;
+  margin: 20rpx 0;
+  font-size: 25rpx;
+}
+.shop_OperatingArea{
+  display: flex;
+  flex: 1;
+}
+.shop_OperatingArea>view{
+  width: 50%;
+}
+
+.left_price text{
+  color: red;
+  font-size: 35rpx;
+}
+.right_number{
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.tool_box{
+  height: 60rpx;
+  display: flex;
+  justify-content: space-between;
+}
+input{
+ border: 1px solid orange;
+ border-radius: 50rpx;
+ width: 150rpx;
+ height: 60rpx;
+ text-align: center;
+ margin: 0 10rpx;
+}
+.smallBtn{
+  width: 60rpx;
+  height: 60rpx;
+  background-color: orange;
+  border-radius: 50rpx;
+  line-height:50rpx;
+  text-align: center;
+  font-size: 40rpx;
+  color: #fff;
+}
+.disabled{
+  background-color: rgb(218, 218, 218);
+  color: #000;
+  cursor: not-allowed;
+}

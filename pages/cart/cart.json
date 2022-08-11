@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "m-settlement":"../../components/settlement/settlement",
+    "m-cartList":"../../components/cartList/cartList",
+    "m-empty":"../../components/emptyData/emptyView"
+  },
+  "enablePullDownRefresh": true,
+  "backgroundTextStyle":"dark"
+}

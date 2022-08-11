@@ -1,0 +1,27 @@
+/* pages/paySuccess/paySuccess.wxss */
+.paySuccess_tootip image{
+  width: 90rpx;
+  height: 90rpx;
+}
+.paySuccess_tootip{
+  text-align: center;
+  padding-top: 100rpx;
+}
+.paySuccess_tootip .title{
+  margin: 40rpx 0;
+}
+button{
+  background-color: orange;
+}
+.youLike{
+  margin-top: 20rpx;
+  background-color: #fff;
+  border-bottom: 2rpx solid #ddd;
+  padding: 20rpx 0;
+  text-align: center;
+  font-size: 40rpx;
+}
+.mixinText{
+  margin: 0 5rpx;
+  color: orange;
+}

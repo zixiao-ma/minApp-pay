@@ -1,0 +1,7 @@
+<view class="scancode">
+  <text class="icon_dot" wx:if="{{showCart}}">{{count}}</text>
+    <view class="button" bindtap="handleScanCode">
+      <image src="{{showCart?'../../assets/images/cart_index.png':'../../assets/images/qrcode.png'}}"></image>
+      <text>{{showCart?'去结算':'请扫描商品条形码'}}</text>
+    </view>
+</view>

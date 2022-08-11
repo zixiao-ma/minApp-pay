@@ -21,6 +21,27 @@
           "query": "",
           "launchMode": "default",
           "scene": null
+        },
+        {
+          "name": "youxuan",
+          "pathName": "pages/product/product",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "订单",
+          "pathName": "pages/payOrder/payOrder",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "支付",
+          "pathName": "pages/paySuccess/paySuccess",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
         }
       ]
     }

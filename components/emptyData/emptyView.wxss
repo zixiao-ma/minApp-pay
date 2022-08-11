@@ -1,0 +1,14 @@
+/* components/emptyData/emptyView.wxss */
+.empty_box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 200rpx;
+}
+.empty_box image{
+  width: 200rpx;
+  height: 200rpx;
+}
+.empty_box text{
+  color: orange;
+}

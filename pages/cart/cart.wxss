@@ -1,0 +1,18 @@
+/* pages/cart/cart.wxss */
+.cart{
+  height: 100vmax;
+}
+.tootip{
+  text-align: center;
+  font-size: 12px;
+  color: #666;
+}
+.cart_settlement{
+  position: fixed;
+  bottom: 0;
+  min-width: 100%;
+}
+.cart_list{
+  height: calc(100vh-75px);
+  overflow: auto;
+}

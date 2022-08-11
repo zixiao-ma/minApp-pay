@@ -1,0 +1,15 @@
+<view class="m-settlement">
+  <view class="cart_top">
+    <view>
+      <checkbox-group bindchange="handleCheckboxChange">
+        <checkbox value="{{1}}" checked="{{checkBoxStatus}}"></checkbox>
+      </checkbox-group>
+    </view>
+    <text>总计：￥<text style="color: red;">{{allPrice}}</text> </text>
+    <button type="warn" wx:if="{{buttonStatus}}" bindtap="handleBatchDelete">批量删除</button>
+  </view>
+  <view class="cart_btm">
+    <view class="cart_btm_btn1" bindtap="cartAddButton">扫码购物</view>
+    <view class="cart_btm_btn2" bindtap="handleClickPay">立即结算({{allNum}})</view>
+  </view>
+</view>

@@ -1,0 +1,25 @@
+<view class="cart_item" 
+capture-bind:touchstart="touchstart" 
+capture-bind:touchend="touchend">
+<view class="cart_list_left">
+<checkbox-group bindchange="handleCheckboxChange">
+  <checkbox checked="{{isCheck}}" value="{{1}}"></checkbox>
+</checkbox-group>
+</view>
+ <view class="cart_list_right">
+  <view class="shop_title">{{title}}</view>
+  <view class="shop_desc">{{desc}}</view>
+  <view class="shop_OperatingArea">
+    <view class="left_price">
+      <text>￥{{price}}</text>
+    </view>
+    <view class="right_number">
+     <view class="tool_box">
+      <view  class="{{num<=1?'smallBtn disabled':'smallBtn'}}" bindtap="changeNum" data-flag="reduce">-</view>
+      <input type="text" value="{{num}}" disabled/>
+      <view class="smallBtn" bindtap="changeNum" data-flag="plus">+</view>
+     </view>
+    </view>
+  </view>
+ </view>
+</view>

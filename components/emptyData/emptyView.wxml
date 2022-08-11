@@ -1,0 +1,6 @@
+<!--components/emptyData/emptyView.wxml-->
+<view class="empty_box">
+<image src="/assets/images/empty.png"></image>
+<text>您的购物车空空如也</text>
+<text>点击下方扫码进行购物</text>
+</view>

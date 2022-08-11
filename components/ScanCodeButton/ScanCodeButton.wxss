@@ -1,0 +1,44 @@
+/* components/ScanCodeButton/ScanCodeButton.wxss */
+.scancode{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  padding-top:100rpx;
+  box-sizing: border-box;
+  position: relative;
+}
+.icon_dot{
+  position: absolute;
+  top: 160rpx;
+  left: 440rpx;
+  width: 40rpx;
+  height: 40rpx;
+  background-color: red;
+  border-radius: 40rpx;
+  color: #fff;
+  line-height: 40rpx;
+  text-align: center;
+}
+.button{
+
+  width: 280rpx;
+  height: 280rpx;
+  border-radius: 50%;
+  background-color: #FEB81C;
+  border : 10px solid #FFE8B6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.button image{
+  width: 168rpx;
+  height: 143rpx;
+}
+.button text{
+  display: block;
+  width: 163rpx;
+  color : #fff;
+  text-align: center;
+  margin-top: 5rpx;
+}
